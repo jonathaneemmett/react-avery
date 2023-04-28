@@ -1,20 +1,23 @@
+.pageContainer {
+	width: 100%;
+	height: 100%;
+}
+
 .page {
 	width: 8.3in; /* + .2in padding */
 	height: 10.8in; /* + .2in padding */
-	padding: 0.2in 0.2in;
-	overflow: visible;
-}
-
-.labelContainer {
-	display: flex;
-	flex-direction: column;
-	gap: 0.5rem;
+	padding: 0.4in 0.5in;
+	margin: 0 auto;
+	page-break-after: always;
 }
 
 .buttonContainer {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
 }
 
 .buttonContainer button {
@@ -39,13 +42,10 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 0;
-
-	width: 1.55in;
-	height: 0.4in;
-	padding-block: 0.055in;
+	width: 1.55in; /* + .2in padding */
+	height: 0.5in;
 	padding-inline: 0.1in;
-	margin-inline-end: 0.42in;
+	margin-inline-end: 0.35in;
 	float: left;
 	text-align: left;
 	overflow: hidden;
@@ -53,6 +53,29 @@
 	font-size: 0.7em;
 }
 
-.label5167:nth-of-type(4n + 5) {
+.label5167:nth-of-type(4n + 4) {
 	margin-inline-end: 0;
+}
+
+.label5960 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 2.43in;
+	height: 1in;
+	padding-inline: 0.1in;
+	float: left;
+	text-align: left;
+	outline: 1px dotted;
+	font-size: 1em;
+}
+
+.label5960:nth-of-type(3n + 3) {
+	margin-inline-end: 0;
+}
+
+@media print {
+	.buttonContainer {
+		display: none;
+	}
 }

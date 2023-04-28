@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Label5167 = ({ item }) => {
+const Label5960 = ({ item }) => {
 	return (
-		<div className='label5167'>
+		<div className='label5960'>
 			<span>{item.name}</span>
 			<span>{item.address}</span>
 			<span>
@@ -12,4 +12,4 @@ const Label5167 = ({ item }) => {
 	);
 };
 
-export default Label5167;
+export default Label5960;
